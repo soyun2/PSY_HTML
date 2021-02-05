@@ -11,6 +11,18 @@
         h4{color : darkgreen}
         #me {background : gold; color : brown; font-weight:bold}
         #Thank{font-size : 25px; color:coral;background-color:cornsilk;font-weight:bold;}
+        input[type=checkbox]:checked+div {
+            height: 600px;
+        }
+        div {
+            overflow: scroll;
+            width: 600px;
+            height: 0px;
+            -ms-transition-duration: 1s;
+            -webkit-transition-duration: 1s;
+            -moz-transition-duration: 1s;
+            transition-duration: 1s;
+        }
     </style>
 </head>
 <body bgcolor = "lightgray">
@@ -62,12 +74,15 @@
         </table>
     </p>
     <h4><b><데이터 분석 결과></b></h4>
-        <img src="sum.png">
-        <br>
-        <img src = "홀짝.png">
-        <br>
-        <img src = "구간별.png">
-        <br>        
+        <input type="checkbox">자세히보기
+        <div>
+            <img src="sum.png">
+            <br>
+            <img src = "홀짝.png">
+            <br>
+            <img src = "구간별.png">
+            <br>        
+        </div>
  
     <h4><b> <프로그램 출력화면></b></h4>
         <img src = "lotto1.png" width = "400" alt = "프로그램 결과 화면">
