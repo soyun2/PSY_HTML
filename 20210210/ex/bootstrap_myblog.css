@@ -57,6 +57,7 @@
   #about-me{
     font-family: 'Handlee', cursive;
     border-radius:15px;
+  
   }
   #about-me h2, #my-codeing-schedule h2, #skills h2 , #my-media h2, #contact h2, #follow h2{
     display:inline-block;
