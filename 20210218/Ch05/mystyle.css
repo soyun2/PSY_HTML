@@ -1,0 +1,66 @@
+/* 초기화 코드(모든 웹에서 같은 서식 적용) */
+
+*{margin:0; padding:0;}
+body{font-family : sans-serif}
+li{list-style: none;}
+a{text-decoration: none;}
+img{border:0;}
+
+
+#main_header
+{
+    width: 960px;
+    margin: 0 auto;
+    height:160px;
+    position:relative;
+}
+
+#main_header>#title
+{
+    position:absolute;
+    left : 20px; top:30px;
+    font-family: 'Reggae One', cursive;
+}
+
+#main_header>#main_gnb
+{
+    position: absolute;
+    right : 0px; top:0px;
+}
+
+#main_header>#main_lnb
+{
+    position: absolute;
+    right : 0px; bottom:10px;
+}
+
+#main_gnb>ul{overflow : hidden; font-family: 'Truculenta', sans-serif;}
+#main_gnb>ul>li{float:left;}
+#main_gnb>ul>li>a{
+    display:block;
+    padding: 2px 10px;
+    border : 1px solid black;
+    background-color:beige;
+}
+#main_gnb>ul>li>a:hover{
+    background-color: saddlebrown;
+    color:white;}
+#main_gnb>ul>li:first-child>a{border-radius : 10px 0 0 10px;}
+#main_gnb>ul>li:last-child>a{border-radius : 0 10px 10px 0;}
+
+
+
+#main_lnb>ul{overflow : hidden; font-family: 'Truculenta', sans-serif;}
+#main_lnb>ul>li{float:left;}
+#main_lnb>ul>li>a{
+    display:block;
+    padding: 10px 20px;
+    border : 1px solid black;
+    background-color:lavender;
+}
+#main_lnb>ul>li>a:hover{
+    background:purple;
+    color:white;
+}
+#main_lnb>ul>li:first-child>a{border-radius : 10px 0 0 10px;}
+#main_lnb>ul>li:last-child>a{border-radius : 0 10px 10px 0;}
