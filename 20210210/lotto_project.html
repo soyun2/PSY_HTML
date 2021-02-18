@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotto Project</title>
+    <style> 
+        #top{
+text-shadow: 0 0 10px #FFFFFF, 2px 2px 2px rgba(206,89,55,0);
+color: #FFFFFF;
+background: #4AA88E;
+}
+        td{text-align : center;}
+        #me {background : gold; color : brown; font-weight:bold}
+        input[type=checkbox]:checked+div {
+            height: 600px;
+        }
+        div {
+            overflow: scroll;
+            width: 600px;
+            height: 0px;
+            -ms-transition-duration: 1s;
+            -webkit-transition-duration: 1s;
+            -moz-transition-duration: 1s;
+            transition-duration: 1s;
+        }
+        body{
+            width:960px;
+            margin : 0 auto;
+            font-family: "고딕";
+        }
+        #contents{background-color: skyblue;}
+        .button{
+            background-color: thistle;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="top">로또 번호 추천 프로젝트</h1>
+    <h2 class="team">팀원 소개</h2>
+    <p>
+        <table border="2" bgcolor = "teal" width="400px" height="300px">
+            <colgroup>
+                <col style = "background : lemonchiffon">
+                <col span = "2" style = "background : papayawhip">
+            </colgroup>
+            <tr style = "background : skyblue">
+                <th>팀원</th>
+                <th>역할</th>
+            </tr>
+            <tr id = "me">
+                <td>나</td>
+                <td>데이터 분석 및 발표</td>
+            </tr>
+            <tr>
+                <td>양수빈</td>
+                <td>데이터 분석 및 PPT 제작</td>
+            </tr>
+            <tr>
+                <td>박상준</td>
+                <td rowspan = "3">코드 작성</td>
+            </tr>
+            <tr>
+                <td>이승직</td>
+            </tr>
+            <tr>
+                <td>최건호</td>
+            </tr>
+        </table>
+    </p>
+    <h2>데이터 분석 결과</h2>
+    <span id="contents">엑셀을 통한 과거 로또 당첨 번호 분석</span>
+        <input type="checkbox">결과보기
+        <div>
+            <img src="sum.png">
+            <br>
+            <img src = "홀짝.png">
+            <br>
+            <img src = "구간별.png">
+            <br>        
+        </div>
+ 
+    <h2>프로그램 출력화면</h2>
+        <img src = "lotto1.png" width = "400" alt = "프로그램 결과 화면">   
+    <br>
+    <a href="#top" style = "text-decoration:none">TOP↑</a>
+    <br>
+    <input type="button" value="Home" onclick="history.back(-1);">
+</body>
+</html>
