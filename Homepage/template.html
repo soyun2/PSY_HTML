@@ -16,23 +16,26 @@
 
   <title>Soyun2_Portfolio</title>
   <style>
-    .navbar-brand { font-size:48px; font-weight:bolder; text-shadow: 4px 4px 0px #bce0d9;}
-    body{font-family : "Times New Roman"}
-  </style>
+    .navbar-brand {
+      font-size: 48px;
+      font-weight: bolder;
+      text-shadow: 4px 4px 0px #bce0d9;
+    }
 
-<body>
+    body {
+      font-family: "Times New Roman"
+    }
+  </style>
+</head>
+
+<header>
   <div class="contact-details-nav">
     <ul>
       <li class="left">+8201049287066</li>
       <li class="left">tkdtod0619@naver.com</li>
+      <li class="left">CONTACT : </li>
     </ul>
   </div>
-  <!-- <div class="collapse" id="navbarToggleExternalContent">
-    <div class="bg-dark p-4">
-      <h5 class="text-white h4">Collapsed content</h5>
-      <span class="text-muted">Toggleable via the navbar brand.</span>
-    </div>
-  </div> -->
   <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Programming Portfolio</a>
@@ -44,15 +47,16 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" target="home" href="file:///C:/Users/KB/Desktop/PSY/PSY_HTML/Homepage/home.html">Home</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">C언어</a>
-            <!-- <a class="nav-link" href="https://github.com/soyun2/C_work2021" target="_blank">C언어</a> -->
-            <div class="dropdown-menu">
-              <a href="lotto_project.html" class="dropdown-item">Lotto Project</a>
-              <a href="https://github.com/soyun2/C_work2021" target="_blank" class="dropdown-item">Git(C_work)</a>
-            </div>
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" href="#" data-toggle="dropdown">C언어</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Lotto Project</a>
+                <!-- <a class="dropdown-item" target="home" href="lotto_project.html">Lotto Project</a> -->
+                <a href="https://github.com/soyun2/C_work2021" target="_blank" class="dropdown-item">Git(C_work)</a>
+              </div>
+              <!-- https://getbootstrap.com/docs/4.2/components/navs/ -->
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://github.com/soyun2/java_work2021" target="_blank">JAVA</a>
@@ -61,107 +65,22 @@
             <a class="nav-link" href="https://github.com/soyun2/PSY_HTML" target="_blank">HTML5/CSS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Python</a>
+            <a class="nav-link" href="#" onclick="alert('준비중입니다.');">Python</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://dhw1009.github.io/webhosting_20210203/01_Intro.html" target="_blank">Partner</a>
+            <a class="nav-link" href="https://dhw1009.github.io/webhosting_20210203/01_Intro.html"
+              target="_blank">Partner</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <!-- 홈화면 사진 구간 -->
-  <div class="container-sm">
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner" role="listbox">
-        <!-- 사진 3개 -->
-        <center>
-          <div class="carousel-item">
-            <img class="d-block img-fluid" src="https://picsum.photos/id/1076/600/400" alt="" margin=auto>
-            <div class="carousel-caption d-md-block">
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="d-block img-fluid" src="https://picsum.photos/id/1081/600/400" alt="Second slide" margin=auto>
-            <div class="carousel-caption d-md-block">
-            </div>
-          </div>
-          <div class="carousel-item active">
-            <img class="d-block img-fluid" src="https://picsum.photos/id/743/600/400" alt="Third slide" margin=auto>
-            <div class="carousel-caption d-md-block">
-            </div>
-          </div>
-        </center>
-      </div>
-      <!-- 이전,다음 사진 버튼 생성 -->
-      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-  </div>
-  <br><br><br>
-  <!-- 카드형 본문 -->
-  <div class="container">
-    <h3>BOOK</h3>
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="card border-light mb-3" style="max-width: 32rem;">
-          <div class="card-header">C언어</div>
-          <div class="card-body">
-            <h5 class="card-title">윤성우의 열혈 C 프로그래밍</h5>
-            <img src="c_book.PNG" alt="">
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="card border-light mb-3" style="max-width: 32rem;">
-          <div class="card-header">JAVA</div>
-          <div class="card-body">
-            <h5 class="card-title">윤성우의 열혈 JAVA 프로그래밍</h5>
-            <img src="java_book.PNG" alt="">
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="card border-light mb-3" style="max-width: 32rem;">
-          <div class="card-header">HTML5/CSS3</div>
-          <div class="card-body">
-            <h5 class="card-title">모던 웹을 위한 HTML5+CSS3 바이블</h5>
-            <img src="html_book.PNG" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <br><br>
-  <!--======= About Us -->
-  <div class="container about">
-    <h3>About US</h3>
-    <div class="row">
-      <div class="col">
-        1 of 2
-      </div>
-      <div class="col">
-        2 of 2
-      </div>
-    </div>
-  </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
-    </script>
+</header>
+<body>
+
+  <iframe src="home.html" name="home" frameborder="0" width="100%" height="1500px" seamless></iframe>
+  <!-- <iframe src="home.html" name="home" frameborder="0" width="100%" height="100%" seamless></iframe> -->
+  <!-- <iframe src="lotto_project.html" name="lotto_project" frameborder="0" width="100%"></iframe> -->
   
 </body>
 

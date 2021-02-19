@@ -1,41 +1,119 @@
-
-
-.contact-details-nav ul{
-    background-color:teal;
-    color:white;
+.contact-details-nav ul {
+    background-color: teal;
+    color: white;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-.contact-details-nav ul  li {
+.contact-details-nav ul li {
     float: left;
     display: block;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
-.contact-details-nav ul .left{
-    float:right;
+
+.contact-details-nav ul .left {
+    float: right;
 }
 
 
-.about .row{
-    border:1px solid;
-    margin:10px 0px;
+.about .row {
+    border: 1px solid;
+    margin: 10px 0px;
 }
 
 
 /*
 === Coustomer testomonials
 */
-
-.card-body img{
-    width:200px;
-    height:200px;
-    border:1px solid black
+.card-body {
+    text-align: center;
 }
-.card-title{
-    font-size : 90%;
+
+.card-body img {
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+    display: block;
+    margin:0 auto;
+}
+
+.card-title {
+    font-size: 90%;
+    text-align: center;
+}
+
+.container {
+    display: block;
+}
+
+#guestbook .guestbook-write {
+    padding: 20px;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+#guestbook .guest-info {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+#guestbook .guest-info input {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-indent: 10px;
+}
+
+#guestbook .secret {
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+#guestbook .secret label {
+    cursor: pointer;
+}
+
+#guestbook .secret input {
+    box-sizing: border-box;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 5px;
+    vertical-align: bottom;
+}
+
+#guestbook textarea {
+    box-sizing: border-box;
+    width: 100%;
+    height: 200px;
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-indent: 10px;
+    overflow-x: hidden;
+}
+
+#guestbook .submit input {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#guestbook .submit input:hover {
+    background: skyblue;
 }

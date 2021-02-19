@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="guestbook">
+        <div id="guest-write">
+            <guest_input_form>
+                <guest_member>
+                    <guest_form>
+                        <div class="guest-info">
+                            <input type="text" name='guest_input_name' value = 'guest_name' title="이름" placeholder="이름" autocomplete="off">
+                        </div>
+                        <div class="guest-info">
+                            <input type="password" name="guest_input_password" maxlength="8" value="guest_password" title="password" placeholder="password">
+                        </div>
+                    </guest_form>
+                    <p class="secret">
+                        <label for="guest_input_is_secret"><input type="checkbox" name="guest_input_is_secret" id="guest_input_is_secret">비밀글</label>
+                    </p>
+                </guest_member>
+                <div class="comment">
+                    <textarea type="text" name="guest_textarea_body" placeholder="여러분의 소중한 방명록을 남겨주세요." autocomplete="off"></textarea>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="방명록 남기기"  onclick="guest_onclick_submit">
+                </div>
+            </guest_input_form>
+        </div>
+    </div>
+</body>
+</html>

@@ -34,7 +34,8 @@
 .card-body img{
     width:200px;
     height:200px;
-    border:1px solid black
+    border:1px solid black;
+    text-align:center;
 }
 .card-title{
     font-size : 90%;
