@@ -1,0 +1,41 @@
+
+
+.contact-details-nav ul{
+    background-color:teal;
+    color:white;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.contact-details-nav ul  li {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.contact-details-nav ul .left{
+    float:right;
+}
+
+
+.about .row{
+    border:1px solid;
+    margin:10px 0px;
+}
+
+
+/*
+=== Coustomer testomonials
+*/
+
+.card-body img{
+    width:200px;
+    height:200px;
+    border:1px solid black
+}
+.card-title{
+    font-size : 90%;
+}
