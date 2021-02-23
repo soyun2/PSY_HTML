@@ -45,19 +45,29 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" target="home" href="file:///C:/Users/KB/Desktop/PSY/PSY_HTML/Homepage/home.html">Home</a>
+            <a class="nav-link active" aria-current="page" target="home" href="home.html">Home</a>
           </li>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown button
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" href="#" data-toggle="dropdown">C언어</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Lotto Project</a>
-                <!-- <a class="dropdown-item" target="home" href="lotto_project.html">Lotto Project</a> -->
-                <a href="https://github.com/soyun2/C_work2021" target="_blank" class="dropdown-item">Git(C_work)</a>
-              </div>
-              <!-- https://getbootstrap.com/docs/4.2/components/navs/ -->
-          </li>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <ul>
+                <li><a class="dropdown-item" target="home" href="lotto_project.html">Lotto Project</a></li>
+                <li><a href="https://github.com/soyun2/C_work2021" target="_blank" class="dropdown-item">Git(C_work)</a></li>
+              </ul>
+            </div>
+          </li>          
           <li class="nav-item">
             <a class="nav-link" href="https://github.com/soyun2/java_work2021" target="_blank">JAVA</a>
           </li>
@@ -77,11 +87,7 @@
   </nav>
 </header>
 <body>
-
   <iframe src="home.html" name="home" frameborder="0" width="100%" height="1500px" seamless></iframe>
-  <!-- <iframe src="home.html" name="home" frameborder="0" width="100%" height="100%" seamless></iframe> -->
-  <!-- <iframe src="lotto_project.html" name="lotto_project" frameborder="0" width="100%"></iframe> -->
-  
 </body>
 
 </html>
