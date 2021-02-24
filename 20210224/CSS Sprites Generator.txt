@@ -1,0 +1,2 @@
+https://www.toptal.com/developers/css/sprite-generator
+png 파일 두개 합치기
