@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin:0; padding:0}
+        body{font-family : 'Helvetica', sans-serif;}
+        li{list-style : none;}
+        a{text-decoration: none;}
+
+        .header{
+            height:60px;
+            line-height: 60px;
+            background-color: thistle;
+            padding-left : 20px;
+            border-bottom : 1px solid black;
+        }
+        .wrap{
+            overflow: hidden;
+        }
+        .aside{
+            float : left;
+            width : 200px;
+        }
+        .section
+        {
+            float : left;
+            width:100%;
+            margin-right:-200px;
+            /* aisde너비 200px에 따라 section부분이 오른쪽으로 밀려서 -200px만큼 땡기는거 */
+        }
+        .inner-section{
+            padding-right: 200px;
+            padding-left:20px;
+            /* -200만큼 땡겨준걸 padding */
+        }
+        body{
+            min-width:600px;
+        }
+        .header{
+            position:fixed;
+            left:0; right:0;
+        }
+        .wrap{
+            padding-top:60px; 
+            /* header때문에 글자잘리는거 예방 - 헤더 높이가 60px */
+        }
+    </style>
+</head>
+<body>
+    <div class = "header">
+        <h1>안녕</h1>
+    </div>
+    <div class="wrap">
+        <div class="aside">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, dolor magnam. Voluptates excepturi voluptatibus debitis tempore quos saepe?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolorum nisi eveniet magnam vel voluptas asperiores iure quam facilis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, dolor magnam. Voluptates excepturi voluptatibus debitis tempore quos saepe?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolorum nisi eveniet magnam vel voluptas asperiores iure quam facilis.</p>
+        </div>
+        <div class="section">
+            <div class="inner-section">
+                <h1>Lorem, ipsum dolor.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse consequatur magnam itaque expedita modi ut tenetur? Laborum, nemo.</p>
+                <h1>Lorem, ipsum dolor.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse consequatur magnam itaque expedita modi ut tenetur? Laborum, nemo.</p>
+                <h1>Lorem, ipsum dolor.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse consequatur magnam itaque expedita modi ut tenetur? Laborum, nemo.</p>
+                <h1>Lorem, ipsum dolor.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse consequatur magnam itaque expedita modi ut tenetur? Laborum, nemo.</p>
+                <h1>Lorem, ipsum dolor.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse consequatur magnam itaque expedita modi ut tenetur? Laborum, nemo.</p>
+                <h1>Lorem, ipsum dolor.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse consequatur magnam itaque expedita modi ut tenetur? Laborum, nemo.</p>
+                <h1>Lorem, ipsum dolor.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse consequatur magnam itaque expedita modi ut tenetur? Laborum, nemo.</p>
+                <h1>Lorem, ipsum dolor.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse consequatur magnam itaque expedita modi ut tenetur? Laborum, nemo.</p>
+                <h1>Lorem, ipsum dolor.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse consequatur magnam itaque expedita modi ut tenetur? Laborum, nemo.</p>
+                <h1>Lorem, ipsum dolor.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse consequatur magnam itaque expedita modi ut tenetur? Laborum, nemo.</p>
+                <h1>Lorem, ipsum dolor.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse consequatur magnam itaque expedita modi ut tenetur? Laborum, nemo.</p>
+                <h1>Lorem, ipsum dolor.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse consequatur magnam itaque expedita modi ut tenetur? Laborum, nemo.</p>
+                <h1>Lorem, ipsum dolor.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse consequatur magnam itaque expedita modi ut tenetur? Laborum, nemo.</p>
+                <h1>Lorem, ipsum dolor.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse consequatur magnam itaque expedita modi ut tenetur? Laborum, nemo.</p>
+                <h1>Lorem, ipsum dolor.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse consequatur magnam itaque expedita modi ut tenetur? Laborum, nemo.</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
