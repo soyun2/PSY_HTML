@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            -webkit-perspective:500;
+        }
+        .wrap{
+            width:200px;
+            height:200px;
+            position:relative;
+            transform-style:preserve-3d;
+            animation-name:d_ani;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            left:100px;
+            top:100px;
+        }
+        @keyframes d_ani
+        {
+            0%{transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg);}
+            100%{transform:rotateX(360deg) rotateY(360deg) rotateZ(360deg);}
+        }
+        .box{
+            width:200px;
+            height:200px;
+            left:0; top:0;
+            position:absolute;
+            opacity:0.3;
+            /* backface-visibility: hidden; */
+        }
+        .box:nth-child(1){
+            background-color: aqua;
+            transform:translate3d(0px, 0px, 100px);
+        }
+        .box:nth-child(2){
+            background-color: blue;
+            transform:rotateY(90deg) translate3d(0px, 0px, 100px); 
+        }
+        .box:nth-child(3){
+            background-color: yellow; 
+            transform:rotateY(180deg) translate3d(0px, 0px, 100px);
+        }
+        .box:nth-child(4){
+            background-color: rgb(192, 24, 127); 
+            transform:rotateY(270deg) translate3d(0px, 0px, 100px);
+        }
+        .box:nth-child(5){
+            background-color: green; 
+            transform:rotateX(90deg) translate3d(0px, 0px, 100px);
+        }
+        .box:nth-child(6){
+            background-color: purple; 
+            transform:rotateX(270deg) translate3d(0px, 0px, 100px);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box"><h1>1</h1></div>
+        <div class="box"><h1>2</h1></div>
+        <div class="box"><h1>3</h1></div>
+        <div class="box"><h1>4</h1></div>
+        <div class="box"><h1>5</h1></div>
+        <div class="box"><h1>6</h1></div>
+    </div>
+</body>
+</html>

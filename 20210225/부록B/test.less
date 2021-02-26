@@ -1,0 +1,17 @@
+@color : #261393;
+@color_hover : yellow;
+@defaultFontSzie : 16px;
+@margin : 10px;
+
+body
+{
+    color:@color;
+    font-size:@defaultFontSzie;
+    margin: @margin * 10;
+}
+a{
+    color:@color;
+    &:hover{
+        color:@color_hover;
+    }
+}

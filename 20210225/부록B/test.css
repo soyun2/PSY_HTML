@@ -1,0 +1,11 @@
+body {
+  color: #261393;
+  font-size: 16px;
+  margin: 100px;
+}
+a {
+  color: #261393;
+}
+a:hover {
+  color: yellow;
+}
